@@ -13,6 +13,7 @@
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
+- [🔭 Future Features](#future-features)
 - [👥 Authors](#authors)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -87,6 +88,17 @@ Example command:
 ```
 
 For more information on how you can use this app, please follow this [tutorial](https://www.youtube.com/watch?v=vkkgrhD6aXQ)
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Validations and Model specs**
+- [ ] **Processing data in models**
+- [ ] **Setup and controllers**
+- [ ] **Views**
+- [ ] **Forms**
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
