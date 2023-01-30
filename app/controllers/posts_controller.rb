@@ -1,7 +1,3 @@
 class PostsController < ApplicationController
-    def initialize
-        
-    end
-    def show
-    end
+  def show; end
 end
