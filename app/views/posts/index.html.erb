@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Here is all posts for a given user</h1>
-</body>
-</html>
+<%= render partial: 'users/user', locals: {user: @user}%>
+<h4>Posts</h4>
+<%# <%= render partial: 'users/post', collection: @posts%>
+
+<% @posts.each do |post| %>
+  <%= render partial: 'users/post', locals: { post: post }%>
+  <%= render partial: 'comments', locals: {comments: post.most_recent_5_comments}%>
+<% end %>

@@ -1,0 +1,8 @@
+<%= stylesheet_link_tag 'users.css' %>
+<div class='user-card'>
+    <div class='user-name-img'>
+        <%= image_tag("https://unsplash.com/photos/F_-0BxGuVvo", :class => 'user-img')%>
+        <%= user.name%><br>
+    </div>
+    <p class='posts-counter'>Number of posts: <%= user.posts_counter%></p>
+</div>
