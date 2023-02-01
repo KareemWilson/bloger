@@ -1,5 +1,6 @@
+<%= stylesheet_link_tag 'users.css' %>
 <%= render partial: 'user', locals: { user: @user }%>
-<h3>Bio</h3>
-<%= @user.bio%>
+<div>Bio <br> <p><%= @user.bio%></p></div>
+
 <h4>Posts</h4>
 <%= render partial: 'post', collection: @posts%>

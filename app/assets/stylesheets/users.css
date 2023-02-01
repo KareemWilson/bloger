@@ -1,0 +1,30 @@
+.user-card{
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7px;
+    padding: 10px;
+    padding-bottom: 1px;
+}
+
+.user-img{
+    height: 90px;
+    width: 90px;
+}
+
+.user-name-img{
+    color: rgb(48, 103, 35);
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.posts-counter{
+    width: 100%;
+    text-align: end;
+    color: dimgrey;
+}
