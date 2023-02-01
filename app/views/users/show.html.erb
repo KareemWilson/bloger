@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Here is a user by a given id</h1>
-</body>
-</html>
+<%= render partial: 'user', locals: { user: @user }%>
+<h3>Bio</h3>
+<%= @user.bio%>
+<h4>Posts</h4>
+<%= render partial: 'post', collection: @posts%>
