@@ -1,3 +1,4 @@
 <p>BY: <%= @post.user.name%></p>
-<%= render partial: 'users/post', locals: { post: @post }%>
+<%= render partial: 'users/post', locals: { post: @post, user: @post.user }%>
 <%= render partial: 'comments', locals: {comments: @post.comments}%>
+<%= render partial: 'comment_form', locals: {user_id: @post.user.id, post_id: @post.id} %>

@@ -3,4 +3,4 @@
 <div>Bio <br> <p><%= @user.bio%></p></div>
 
 <h4>Posts</h4>
-<%= render partial: 'post', collection: @posts%>
+<%= render partial: 'post', collection: @posts, locals: {user: @user}%>

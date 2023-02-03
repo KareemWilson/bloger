@@ -1,8 +1,7 @@
 <%= render partial: 'users/user', locals: {user: @user}%>
 <h4>Posts</h4>
-<%# <%= render partial: 'users/post', collection: @posts%>
 
 <% @posts.each do |post| %>
-  <%= render partial: 'users/post', locals: { post: post }%>
+  <%= render partial: 'users/post', locals: { post: post, user: @user }%>
   <%= render partial: 'comments', locals: {comments: post.most_recent_5_comments}%>
 <% end %>

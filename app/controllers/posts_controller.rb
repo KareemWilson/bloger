@@ -7,8 +7,18 @@ class PostsController < ApplicationController
     @posts = @user.posts
   end
 
+  def new
+    @post = Post.new
+  end
+
+  def create
+    post = Post.new(title: params[:post][:title], text: params[:post][:text], user_id: current_user.id)
+    post.save!
+    redirect_to user_posts_path
+  end
+
   def show
-    @post = @user.posts.find(params[:post_id])
+    @post = @user.posts.find(params[:id])
   end
 
   private

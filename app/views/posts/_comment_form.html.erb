@@ -1,0 +1,4 @@
+<%= form_with method: :post, url: "/users/#{user_id}/posts/#{post_id}/comments" do |f|%>
+    <%= f.text_field :text%>
+    <%= f.submit :AddComment%>
+<% end %>
