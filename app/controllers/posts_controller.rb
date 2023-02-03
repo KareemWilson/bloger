@@ -5,12 +5,10 @@ class PostsController < ApplicationController
 
   def index
     @posts = @user.posts
-    
   end
 
   def new
     @post = Post.new
-    current_user = current_user
   end
 
   def create
