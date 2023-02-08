@@ -3,5 +3,6 @@
 
 <% @posts.each do |post| %>
   <%= render partial: 'users/post', locals: { post: post, user: @user }%>
-  <%= render partial: 'comments', locals: {comments: post.most_recent_5_comments}%>
+  <% comments = post.comments.includes(:user).order(created_at: :desc).limit(5) %>
+  <%= render partial: 'comments', locals: {comments: comments}%>
 <% end %>
