@@ -4,3 +4,4 @@
 
 <h4>Posts</h4>
 <%= render partial: 'post', collection: @posts, locals: {user: @user}%>
+<%= link_to 'See All Posts', user_posts_path(@user) %>

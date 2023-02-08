@@ -18,7 +18,7 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = @user.posts.find(params[:id])
+    @post = @user.posts.includes(comments: :user).find(params[:id])
   end
 
   private
