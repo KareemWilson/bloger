@@ -9,7 +9,7 @@ RSpec.describe 'Post Show', type: :system do
       @comment1 = Comment.create(text: 'This is a comment 1', user: @user2, post: @post1)
       @comment2 = Comment.create(text: 'This is a comment 2', user: @user2, post: @post1)
       @like1 = Like.create(user: @user2, post: @post1)
-      visit user_post_path(@user1, @post_1)
+      visit user_post_path(@user1, @post1)
     end
 
     it 'Should Show the post\'s title' do
