@@ -73,8 +73,8 @@ group :test do
 end
 
 group :development, :test do
+  gem 'database_cleaner'
   gem 'rails-controller-testing'
   gem 'rspec-rails'
-  gem "database_cleaner"
   gem 'webdrivers'
 end
