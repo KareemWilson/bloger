@@ -4,20 +4,21 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-- [🔭 Future Features](#future-features)
-- [👥 Authors](#authors)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Bloger ](#-bloger-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+  - [🔭 Future Features ](#-future-features-)
+  - [👥 Author ](#-author-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support \</a](#️-show-your-support-a)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -62,7 +63,7 @@ Example commands:
 ```sh
   cd my-folder
   git clone (https://github.com/KareemWilson/bloger.git)
-  cd bloger 
+  cd bloger
 
 ```
 
@@ -110,6 +111,11 @@ For more information on how you can use this app, please follow this [tutorial](
 - GitHub: [@KareemWilson](https://github.com/KareemWilson)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/kareem-wilsons)
 
+👤 **Abdulai Samuel Moiwa**
+
+- GitHub: [@githubhandle](https://github.com/samuelmoiwa)
+- Twitter: [@twitterhandle](https://twitter.com/samuelmoiwa)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ing-abdulai-samuel-moiwa-726340142/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
