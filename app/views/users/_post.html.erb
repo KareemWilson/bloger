@@ -1,6 +1,6 @@
 <%= stylesheet_link_tag 'posts.css' %>
 <div class='post-card'>
-    <%= post.title %><br>
+    <%= link_to post.title, user_post_path(user,post) %><br>
     <%= post.text%><br>
     <div class='likes-comments-counters'>
         <%= form_with url: user_post_likes_path(post_id: post.id, user_id: user.id ), method: :post do |f| %>
