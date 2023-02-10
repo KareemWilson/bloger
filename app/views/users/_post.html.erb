@@ -4,9 +4,13 @@
     <%= post.text%><br>
     <div class='likes-comments-counters'>
         <%= form_with url: user_post_likes_path(post_id: post.id, user_id: user.id ), method: :post do |f| %>
-        <%=f.hidden_field :post_id, value: post.id %>
+        <%= f.hidden_field :post_id, value: post.id %>
         <%= f.submit :Like %> 
-        <%end%>
+        <%end%><br/>
+            <%= form_with url: user_post_path(user, post), method: :delete do |f| %>
+            <%= f.hidden_field :post_id, value: post.id %>
+            <%= f.submit :Delete %> 
+            <%end%><br/>
         <p>Comments:<%= post.comments_counter%>    Likes:<%= post.likes_counter%></p>
     </div>
 </div>

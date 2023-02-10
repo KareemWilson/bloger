@@ -1,5 +1,13 @@
-<div>
+<%= stylesheet_link_tag 'comments.css' %>
+
+<div class="comments-box">
     <% comments.each do |comment| %>
-      <p><%= comment.user.name%>: <%= comment.text%></p>
+      <div class='comment-card'>
+        <p><%= comment.user.name%>: <%= comment.text%></p>
+        <%= form_with url: user_post_comment_path(comment.user, comment.post, comment), method: :delete do |f| %>
+            <%= f.hidden_field :post_id, value: comment.post.id %>
+            <%= f.submit 'Delete' ,class: 'fa fa-trash' %> 
+            <%end%>
+      </div>
     <% end %>
 </div>
