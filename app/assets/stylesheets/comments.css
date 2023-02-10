@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 15px;
 }
+
 .comment-card {
   display: flex;
   flex-direction: row;
