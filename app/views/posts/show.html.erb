@@ -2,4 +2,4 @@
 
 <%= render partial: 'users/post', locals: { post: @post, user: @post.user }%>
 <%= render partial: 'comments', locals: {comments: @post.comments, user: current_user, post: @post}%>
-<%= render partial: 'comment_form', locals: {user_id: params[:user_id], post_id: @post.id} %>
+<%= render partial: 'comment_form', locals: {user_id: current_user.id, post_id: @post.id} %>

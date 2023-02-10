@@ -2,9 +2,10 @@ class CommentsController < ApplicationController
   def index; end
 
   def create
-    new_comment = Comment.new(post_id: params[:post_id], user_id: params[:user_id], text: params[:text])
+    new_comment = Comment.new(post_id: params[:post_id], user_id: current_user.id, text: params[:text])
+    post = Post.find(params[:post_id])
     new_comment.save
-    redirect_to "/users/#{params[:user_id]}/posts/#{params[:post_id]}"
+    redirect_to "/users/#{post.user_id}/posts/#{new_comment.post_id}"
   end
 
   def destroy
