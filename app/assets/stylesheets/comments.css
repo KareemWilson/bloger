@@ -1,0 +1,15 @@
+.comments-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
+.comment-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 0 10px;
+
+}
