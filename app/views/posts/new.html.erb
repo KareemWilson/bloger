@@ -1,4 +1,5 @@
 <div>
+ 
     <%= form_with  model: @post, method: :post, url: user_posts_path do |f|%>
         <%= f.label :title %>
         <%= f.text_field :title %>
@@ -6,4 +7,5 @@
         <%= f.text_field :text %>
         <%= f.submit :Add%>
     <% end %>
+
 </div>
