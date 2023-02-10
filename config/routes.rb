@@ -1,11 +1,9 @@
 Rails.application.routes.draw do
-  # get '/users', to: 'users#index'
-  # get '/users/:user_id', to: 'users#show'
-  # get '/users/:user_id/posts', to: 'posts#index'
-  # get '/users/:user_id/posts/new', to: 'posts#new'
-  # post 'posts', to: 'posts#create'
-  # get '/users/:user_id/posts/:post_id', to: 'posts#show'
-
+  devise_for :users, controllers: { sessions: 'users/sessions' }
+  devise_scope :user do
+    get '/users/sign_in', to: 'users/sessions#new'
+    get '/users/sign_out', to: 'users/sessions#destroy'
+  end
   root 'users#index'
   resources :users do
     resources :posts do 
